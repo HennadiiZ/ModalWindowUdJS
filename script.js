@@ -24,7 +24,5 @@ function openModalFunction() {
 };
 
 document.addEventListener('keydown', (e) => {
-    if(e.key === 'Escape') {
-        closeModalFunction();
-    }
+    (e.key === 'Escape') && closeModalFunction();
 });
