@@ -6,18 +6,12 @@ const closeModal = document.querySelector('.close-modal');
 const overlay = document.querySelector('.overlay');
 
 showModalbtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        openModalFunction()
-    });
+    btn.addEventListener('click', openModalFunction);
 });
 
-closeModal.addEventListener('click', () => {
-    closeModalFunction()
-});
+closeModal.addEventListener('click', closeModalFunction);
 
-overlay.addEventListener('click', () => {
-    closeModalFunction()
-});
+overlay.addEventListener('click', closeModalFunction);
 
 function closeModalFunction() {
     overlay.classList.add('hidden');
