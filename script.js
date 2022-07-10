@@ -22,3 +22,9 @@ function openModalFunction() {
     modal.classList.remove('hidden');
     overlay.classList.remove('hidden');
 };
+
+document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape') {
+        closeModalFunction();
+    }
+});
