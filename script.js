@@ -24,5 +24,5 @@ function openModalFunction() {
 };
 
 document.addEventListener('keydown', (e) => {
-    (e.key === 'Escape') && closeModalFunction();
+    (e.key === 'Escape' && !modal.classList.contains('hidden')) && closeModalFunction();
 });
